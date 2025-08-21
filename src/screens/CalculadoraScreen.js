@@ -1,40 +1,55 @@
+import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#f5f6fa',
     alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: 'flex-start', 
     padding: 20,
+    paddingTop: 100, 
   },
   text: {
     fontSize: 28,
-    fontWeight: 'bold',
-    marginBottom: 20,
-    color: '#2d3436',
+    fontWeight: '800',
+    marginBottom: 16,
+    color: '#f0bc69ff',
+    letterSpacing: 0.3,
   },
   input: {
-    borderWidth: 1,
-    borderColor: '#b2bec3',
-    borderRadius: 8,
-    width: '80%',
-    padding: 10,
+    borderWidth: 3,
+    borderColor: '#c0d899ff',
+    borderRadius: 12,
+    width: '90%',
+    paddingVertical: 12,
+    paddingHorizontal: 16,
     marginBottom: 10,
     fontSize: 18,
     textAlign: 'center',
-    backgroundColor: 'white',
+    backgroundColor: '#e1e7c3ff',
+    shadowColor: '#000',
+    shadowOpacity: 0.06,
+    shadowRadius: 8,
+    shadowOffset: { width: 0, height: 4 },
+    elevation: 2,
   },
-  buttons: {
+
+  circleRow: {
     flexDirection: 'row',
-    justifyContent: 'space-between',
-    width: '80%',
-    marginTop: 10,
-    marginBottom: 20,
+    justifyContent: 'center',
+    width: '90%',
+    marginVertical: 10,
   },
-  btn: { flex: 1, marginHorizontal: 4 },
+
+
+
   result: {
     fontSize: 22,
-    fontWeight: 'bold',
-    color: '#0984e3',
+    fontWeight: '800',
+    color: '#f0bc69ff',
+    marginTop: 20,
   },
 });
+
+export default styles;
+
